@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{52F2C15F-8AE8-41A1-BDD7-A24F8DF3EF93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZombicideCard.Data", "src\ZombicideCard.Data\ZombicideCard.Data.csproj", "{B51F6C92-8247-4D21-9491-8E78DE65C9C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZombicideCard.Repository", "src\ZombicideCard.Repository\ZombicideCard.Repository.csproj", "{D2BA8DD4-D38F-4FDD-A71D-D8CBBF179AD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZombicideCard.UI", "src\ZombicideCard.UI\ZombicideCard.UI.csproj", "{F2F3AFCE-A1AA-4D59-AE69-2158FE51A173}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EC1E9DDF-532F-4206-8FA4-5028852542D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZombicideCardData_Tests", "test\ZombicideCardData_Tests\ZombicideCardData_Tests.csproj", "{56487898-0E33-44B3-BF51-587F2B365C08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZombicideCardRepo_Tests", "test\ZombicideCardRepo_Tests\ZombicideCardRepo_Tests.csproj", "{60347CED-035E-4274-9598-35BA0D5AFA8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B51F6C92-8247-4D21-9491-8E78DE65C9C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B51F6C92-8247-4D21-9491-8E78DE65C9C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B51F6C92-8247-4D21-9491-8E78DE65C9C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B51F6C92-8247-4D21-9491-8E78DE65C9C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2BA8DD4-D38F-4FDD-A71D-D8CBBF179AD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2BA8DD4-D38F-4FDD-A71D-D8CBBF179AD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2BA8DD4-D38F-4FDD-A71D-D8CBBF179AD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2BA8DD4-D38F-4FDD-A71D-D8CBBF179AD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2F3AFCE-A1AA-4D59-AE69-2158FE51A173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2F3AFCE-A1AA-4D59-AE69-2158FE51A173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2F3AFCE-A1AA-4D59-AE69-2158FE51A173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2F3AFCE-A1AA-4D59-AE69-2158FE51A173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56487898-0E33-44B3-BF51-587F2B365C08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56487898-0E33-44B3-BF51-587F2B365C08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56487898-0E33-44B3-BF51-587F2B365C08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56487898-0E33-44B3-BF51-587F2B365C08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60347CED-035E-4274-9598-35BA0D5AFA8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60347CED-035E-4274-9598-35BA0D5AFA8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60347CED-035E-4274-9598-35BA0D5AFA8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60347CED-035E-4274-9598-35BA0D5AFA8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B51F6C92-8247-4D21-9491-8E78DE65C9C8} = {52F2C15F-8AE8-41A1-BDD7-A24F8DF3EF93}
+		{D2BA8DD4-D38F-4FDD-A71D-D8CBBF179AD6} = {52F2C15F-8AE8-41A1-BDD7-A24F8DF3EF93}
+		{F2F3AFCE-A1AA-4D59-AE69-2158FE51A173} = {52F2C15F-8AE8-41A1-BDD7-A24F8DF3EF93}
+		{56487898-0E33-44B3-BF51-587F2B365C08} = {EC1E9DDF-532F-4206-8FA4-5028852542D5}
+		{60347CED-035E-4274-9598-35BA0D5AFA8E} = {EC1E9DDF-532F-4206-8FA4-5028852542D5}
+	EndGlobalSection
+EndGlobal
