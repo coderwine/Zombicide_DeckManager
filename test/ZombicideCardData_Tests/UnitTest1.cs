@@ -110,14 +110,20 @@ public class UnitTest1
     [Fact] //* 8
     public void MurderOfCrows_Test()
     {
+        MurderOfCrows deck = new MurderOfCrows(
+            105, EnemyActivation.Murder_of_Crows, 2, EnemyActivation.Murder_of_Crows, 3, EnemyActivation.Murder_of_Crows, 4, EnemyActivation.Murder_of_Crows, 5, CardType.Murder_of_Crows
+        );
 
+        EnemyActivation expected = EnemyActivation.Murder_of_Crows;
+        EnemyActivation actual = deck.BlueAttack;
+        Assert.Equal(expected, actual);
     }
 
-    // [Fact] //* 9
-    // public void NoRestForTheWicked_Test()
-    // {
+    [Fact] //* 9
+    public void NoRestForTheWicked_Test()
+    {
 
-    // }
+    }
 
     // [Fact] //* 10
     // public void NPC_Test()

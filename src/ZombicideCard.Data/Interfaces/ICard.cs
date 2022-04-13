@@ -6,13 +6,13 @@ using System.Threading.Tasks;
     public interface ICard
     {
         int CardID { get; set; }
-        EnemieActivation BlueAttack { get; set; }
+        EnemyActivation BlueAttack { get; set; }
         int BlueAttackCount { get; set;}
-        EnemieActivation YellowAttack { get; set; }
+        EnemyActivation YellowAttack { get; set; }
         int YellowAttackCount { get; set;}
-        EnemieActivation OrangeAttack { get; set; }
+        EnemyActivation OrangeAttack { get; set; }
         int OrangeAttackCount { get; set;}
-        EnemieActivation RedAttack { get; set; }
+        EnemyActivation RedAttack { get; set; }
         int RedAttackCount { get; set;}
         CardType TypeOfEnemy { get; set; }
         BoxSet Box { get; }
