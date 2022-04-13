@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-// namespace ZombicideCard.Data.Interfaces
-// {
     public interface ICard
     {
         int CardID { get; set; }
@@ -20,4 +18,3 @@ using System.Threading.Tasks;
         BoxSet Box { get; }
 
     }
-// }

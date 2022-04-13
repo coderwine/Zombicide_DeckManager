@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 public class Guestbox : ICard
 {
-    public Guestbox(int id, EnemieActivation blueAtk, int blueCt, EnemieActivation yellowAtk, int yellowCt, EnemieActivation orangeAtk, int orangeCt, EnemieActivation redAtk, int redCt, CardType type)
+    public Guestbox(int id, EnemieActivation blueAtk, int blueCt, EnemieActivation yellowAtk, int yellowCt, EnemieActivation orangeAtk, int orangeCt, EnemieActivation redAtk, int redCt, CardType type, string name)
     {
         CardID = id;
         BlueAttack = blueAtk;
@@ -18,6 +18,7 @@ public class Guestbox : ICard
         RedAttack = redAtk;
         RedAttackCount = redCt;
         TypeOfEnemy = type;
+        GuestName = name;
     }
     public int CardID { get; set; }
     public EnemieActivation BlueAttack { get; set; }
@@ -29,6 +30,7 @@ public class Guestbox : ICard
     public EnemieActivation RedAttack { get; set; }
     public int RedAttackCount { get; set; }
     public CardType TypeOfEnemy { get; set; }
+    public string GuestName { get; set; }
 
     public BoxSet Box { get; private set;} = BoxSet.Guestbox;
 }
