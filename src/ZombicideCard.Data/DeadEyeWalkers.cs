@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 
 
-public class BlackPlagueEnemyDeck : ICard
+public class DeadEyeWalkers : ICard
 {
-    public BlackPlagueEnemyDeck(int id, string blueAtk, int blueCt, string yellowAtk, int yellowCt, string orangeAtk, int orangeCt, string redAtk, int redCt, string type)
+    public DeadEyeWalkers(int id, EnemieActivation blueAtk, int blueCt, EnemieActivation yellowAtk, int yellowCt, EnemieActivation orangeAtk, int orangeCt, EnemieActivation redAtk, int redCt, CardType type)
     {
         CardID = id;
         BlueAttack = blueAtk;
@@ -20,14 +20,15 @@ public class BlackPlagueEnemyDeck : ICard
         TypeOfEnemy = type;
     }
     public int CardID { get; set; }
-    public string BlueAttack { get; set; }
+    public EnemieActivation BlueAttack { get; set; }
     public int BlueAttackCount { get; set; }
-    public string YellowAttack { get; set; }
+    public EnemieActivation YellowAttack { get; set; }
     public int YellowAttackCount { get; set; }
-    public string OrangeAttack { get; set; }
+    public EnemieActivation OrangeAttack { get; set; }
     public int OrangeAttackCount { get; set; }
-    public string RedAttack { get; set; }
+    public EnemieActivation RedAttack { get; set; }
     public int RedAttackCount { get; set; }
-    public string TypeOfEnemy { get; set; }
-    public string Box { get; private set; } = "Black Plague";
+    public CardType TypeOfEnemy { get; set; }
+
+    public BoxSet Box { get; private set; } = BoxSet.Dead_Eye_Walkers;
 }

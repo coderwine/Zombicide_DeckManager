@@ -7,14 +7,14 @@ public class UnitTest1
     [Fact]
     public void Test1()
     {
-        BlackPlagueEnemyDeck deck = new BlackPlagueEnemyDeck(
-            1, "Nothing", 1, "Runner", 2, "Walker", 5, "Fatty", 2, "Standard Zombies"
+        BlackPlague deck = new BlackPlague(
+            1, EnemieActivation.Nothing, 1, EnemieActivation.Runner, 2, EnemieActivation.Walker, 5, EnemieActivation.Fatty, 2, CardType.Standard_Zombies
         );
 
-        string checkBoxExpected = "Black Plague";
-        string checkBoxActual = deck.Box;
-        string checkRedExpected = "Fatty";
-        string checkRedActual = deck.RedAttack;
+        BoxSet checkBoxExpected = BoxSet.Black_Plague;
+        BoxSet checkBoxActual = deck.Box;
+        EnemieActivation checkRedExpected = EnemieActivation.Fatty;
+        EnemieActivation checkRedActual = deck.RedAttack;
 
         Assert.Equal(checkBoxExpected, checkBoxActual);
         Assert.Equal(checkRedExpected, checkRedActual);
