@@ -1,5 +1,5 @@
 
-    public enum EnemieActivation
+    public enum EnemyActivation
     {
         Nothing,
         Walker,

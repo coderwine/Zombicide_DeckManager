@@ -6,60 +6,60 @@ public class UnitTest1
 {
 
     //! Data Tests
-    [Fact]
+    [Fact] //* 1
     public void BlackPlague_Test()
     {
         BlackPlague deck = new BlackPlague(
-            1, EnemieActivation.Nothing, 1, EnemieActivation.Runner, 2, EnemieActivation.Walker, 5, EnemieActivation.Fatty, 2, CardType.Standard_Zombies
+            1, EnemyActivation.Nothing, 1, EnemyActivation.Runner, 2, EnemyActivation.Walker, 5, EnemyActivation.Fatty, 2, CardType.Standard_Zombies
         );
 
         BoxSet checkBoxExpected = BoxSet.Black_Plague;
         BoxSet checkBoxActual = deck.Box;
-        EnemieActivation checkRedExpected = EnemieActivation.Fatty;
-        EnemieActivation checkRedActual = deck.RedAttack;
+        EnemyActivation checkRedExpected = EnemyActivation.Fatty;
+        EnemyActivation checkRedActual = deck.RedAttack;
 
         Assert.Equal(checkBoxExpected, checkBoxActual);
         Assert.Equal(checkRedExpected, checkRedActual);
     }
 
-    [Fact]
+    [Fact] //* 2
     public void AbominationPack_Test()
     {
         AbominationPack deck = new AbominationPack(
-            87, EnemieActivation.Nothing, 0, EnemieActivation.Ablobination, 1, EnemieActivation.Ablobination, 1, EnemieActivation.Ablobination, 1,
+            87, EnemyActivation.Nothing, 0, EnemyActivation.Ablobination, 1, EnemyActivation.Ablobination, 1, EnemyActivation.Ablobination, 1,
             CardType.Abomination
         );
 
         BoxSet boxExpected = BoxSet.Abomination_Pack;
         BoxSet boxActual = deck.Box;
-        EnemieActivation checkYellow = EnemieActivation.Ablobination;
-        EnemieActivation actualYellow = deck.YellowAttack;
+        EnemyActivation checkYellow = EnemyActivation.Ablobination;
+        EnemyActivation actualYellow = deck.YellowAttack;
 
         Assert.Equal(boxExpected, boxActual);
         Assert.Equal(checkYellow, actualYellow);
     }
 
-    [Fact]
+    [Fact] //* 3
     public void DeadEyeWalkers_Test()
     {
         DeadEyeWalkers deck = new DeadEyeWalkers(
-            99, EnemieActivation.Dead_Eye_Walkers, 1, EnemieActivation.Dead_Eye_Walkers, 2, EnemieActivation.Dead_Eye_Walkers, 3, EnemieActivation.Dead_Eye_Walkers, 4, CardType.Dead_Eye_Walkers
+            99, EnemyActivation.Dead_Eye_Walkers, 1, EnemyActivation.Dead_Eye_Walkers, 2, EnemyActivation.Dead_Eye_Walkers, 3, EnemyActivation.Dead_Eye_Walkers, 4, CardType.Dead_Eye_Walkers
         );
 
         BoxSet boxExpected = BoxSet.Dead_Eye_Walkers;
         BoxSet boxActual = deck.Box;
-        EnemieActivation checkRed = EnemieActivation.Dead_Eye_Walkers;
-        EnemieActivation actualRed = deck.RedAttack;
+        EnemyActivation checkRed = EnemyActivation.Dead_Eye_Walkers;
+        EnemyActivation actualRed = deck.RedAttack;
 
         Assert.Equal(boxExpected, boxActual);
         Assert.Equal(checkRed, actualRed);
     }
 
-    [Fact]
+    [Fact] //* 4
     public void FriendsAndFoes_Test()
     {
         FriendsAndFoes deck = new FriendsAndFoes(
-            253, EnemieActivation.Tainted_Abomination, 1, EnemieActivation.Tainted_Walker, 2, EnemieActivation.Tainted_Walker, 6, EnemieActivation.Tainted_Walker, 2, CardType.Abomination
+            253, EnemyActivation.Tainted_Abomination, 1, EnemyActivation.Tainted_Walker, 2, EnemyActivation.Tainted_Walker, 6, EnemyActivation.Tainted_Walker, 2, CardType.Abomination
         );
 
         int checkRedCt = 2;
@@ -68,11 +68,11 @@ public class UnitTest1
         Assert.Equal(checkRedCt, actualRedCt);
     }
 
-    [Fact]
+    [Fact] //* 5
     public void GreenHorde_Test()
     {
         GreenHorde deck = new GreenHorde(
-            167, EnemieActivation.Nothing, 0, EnemieActivation.Orc_Runner, 5, EnemieActivation.Orc_Walker, 6, EnemieActivation.Orc_Fatty, 3, CardType.Orc_Horde
+            167, EnemyActivation.Nothing, 0, EnemyActivation.Orc_Runner, 5, EnemyActivation.Orc_Walker, 6, EnemyActivation.Orc_Fatty, 3, CardType.Orc_Horde
         );
 
         int expectedID = 167;
@@ -81,11 +81,11 @@ public class UnitTest1
         Assert.Equal(expectedID, actualID);
     }
 
-    [Fact]
+    [Fact] //* 6
     public void Guestbox_Test()
     {
         Guestbox deck = new Guestbox(
-            125, EnemieActivation.ToMeKuPa, 1, EnemieActivation.ToMeKuPa, 1, EnemieActivation.ToMeKuPa, 1, EnemieActivation.ToMeKuPa, 1, CardType.Necromancer, "Crtichlow"
+            125, EnemyActivation.ToMeKuPa, 1, EnemyActivation.ToMeKuPa, 1, EnemyActivation.ToMeKuPa, 1, EnemyActivation.ToMeKuPa, 1, CardType.Necromancer, "Crtichlow"
         );
 
         string expectedGuest = "Crtichlow";
@@ -94,48 +94,54 @@ public class UnitTest1
         Assert.Equal(expectedGuest, actualGuest);
     }
 
-    //TODO Paused here
-    [Fact]
+    [Fact] //* 7
     public void KSExclusive_Test()
     {
+        KSExclusive deck = new KSExclusive(
+            117, EnemyActivation.Nothing, 1, EnemyActivation.Abominalpha, 1, EnemyActivation.Abominalpha, 1, EnemyActivation.Abominalpha, 1, CardType.Abominalpha
+        );
 
+        EnemyActivation expected = EnemyActivation.Nothing;
+        EnemyActivation actual = deck.BlueAttack;
+
+        Assert.Equal(expected, actual);
     }
 
-    [Fact]
+    [Fact] //* 8
     public void MurderOfCrows_Test()
     {
 
     }
 
-    [Fact]
-    public void NoRestForTheWicked_Test()
-    {
+    // [Fact] //* 9
+    // public void NoRestForTheWicked_Test()
+    // {
 
-    }
+    // }
 
-    [Fact]
-    public void NPC_Test()
-    {
+    // [Fact] //* 10
+    // public void NPC_Test()
+    // {
 
-    }
+    // }
 
-    [Fact]
-    public void Promotional_Test()
-    {
+    // [Fact] //* 11
+    // public void Promotional_Test()
+    // {
 
-    }
+    // }
 
-    [Fact]
-    public void RatKingSwampTroll_Tests()
-    {
+    // [Fact] //* 12
+    // public void RatKingSwampTroll_Tests()
+    // {
 
-    }
+    // }
 
-    [Fact]
-    public void Wulfsbug_Tests()
-    {
+    // [Fact] //* 13
+    // public void Wulfsbug_Tests()
+    // {
 
-    }
+    // }
 
     //! REPO TESTS
 

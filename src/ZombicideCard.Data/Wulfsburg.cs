@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 public class Wulfsburg : ICard
 {
-    public Wulfsburg(int id, EnemieActivation blueAtk, int blueCt, EnemieActivation yellowAtk, int yellowCt, EnemieActivation orangeAtk, int orangeCt, EnemieActivation redAtk, int redCt, CardType type)
+    public Wulfsburg(int id, EnemyActivation blueAtk, int blueCt, EnemyActivation yellowAtk, int yellowCt, EnemyActivation orangeAtk, int orangeCt, EnemyActivation redAtk, int redCt, CardType type)
     {
         CardID = id;
         BlueAttack = blueAtk;
@@ -20,13 +20,13 @@ public class Wulfsburg : ICard
         TypeOfEnemy = type;
     }
     public int CardID { get; set; }
-    public EnemieActivation BlueAttack { get; set; }
+    public EnemyActivation BlueAttack { get; set; }
     public int BlueAttackCount { get; set; }
-    public EnemieActivation YellowAttack { get; set; }
+    public EnemyActivation YellowAttack { get; set; }
     public int YellowAttackCount { get; set; }
-    public EnemieActivation OrangeAttack { get; set; }
+    public EnemyActivation OrangeAttack { get; set; }
     public int OrangeAttackCount { get; set; }
-    public EnemieActivation RedAttack { get; set; }
+    public EnemyActivation RedAttack { get; set; }
     public int RedAttackCount { get; set; }
     public CardType TypeOfEnemy { get; set; }
 
