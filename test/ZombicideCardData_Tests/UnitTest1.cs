@@ -122,32 +122,73 @@ public class UnitTest1
     [Fact] //* 9
     public void NoRestForTheWicked_Test()
     {
+        NoRestForTheWicked deck = new NoRestForTheWicked(
+            221, EnemyActivation.Nothing, 0, EnemyActivation.Necromantic_Dragon, 1,
+            EnemyActivation.Necromantic_Dragon, 1,
+            EnemyActivation.Necromantic_Dragon, 1,
+            CardType.Dragon
+        );
 
+        EnemyActivation expected = EnemyActivation.Necromantic_Dragon;
+        EnemyActivation actual = deck.YellowAttack;
+
+        Assert.Equal(expected, actual);
     }
 
-    // [Fact] //* 10
-    // public void NPC_Test()
-    // {
+    [Fact] //* 10
+    public void NPC_Test()
+    {
+        NPC deck = new NPC(
+            63, EnemyActivation.Nothing, 0, EnemyActivation.NPC, 4, EnemyActivation.NPC, 4, EnemyActivation.NPC, 5, CardType.NPC, 1
+        );
 
-    // }
+        int expected = 1;
+        int actual = deck.NPCBoxNumber;
 
-    // [Fact] //* 11
-    // public void Promotional_Test()
-    // {
+        Assert.Equal(expected, actual);
+    }
 
-    // }
+    [Fact] //* 11
+    public void Promotional_Test()
+    {
+        Promotional deck = new Promotional(
+            161, EnemyActivation.Erik_Summoner, 1,EnemyActivation.Erik_Summoner, 1,EnemyActivation.Erik_Summoner, 1, 
+            EnemyActivation.Erik_Summoner, 1,CardType.Necromancer
+        );
 
-    // [Fact] //* 12
-    // public void RatKingSwampTroll_Tests()
-    // {
+        EnemyActivation expected = EnemyActivation.Erik_Summoner;
+        EnemyActivation actual = deck.BlueAttack;
 
-    // }
+        Assert.Equal(expected, actual);
+    }
 
-    // [Fact] //* 13
-    // public void Wulfsbug_Tests()
-    // {
+    [Fact] //* 12
+    public void RatKingSwampTroll_Tests()
+    {
+        RatKingSwampTroll deck = new RatKingSwampTroll(
+            351, EnemyActivation.Rat_King, 1,EnemyActivation.Rat_King, 2,EnemyActivation.Rat_King, 4,EnemyActivation.Rat_King, 6,
+            CardType.Necromancer
+        );
 
-    // }
+        CardType expected = CardType.Necromancer;
+        CardType actual = deck.TypeOfEnemy;
+
+        Assert.Equal(expected, actual);
+    }
+
+    [Fact] //* 13
+    public void Wulfsbug_Tests()
+    {
+        Wulfsburg deck = new Wulfsburg(
+            55, EnemyActivation.Wolvz, 1,
+            EnemyActivation.Wolvz, 2,EnemyActivation.Wolvz, 3,EnemyActivation.Wolvz, 4,CardType.Zombie_Wolfz
+        );
+
+        int expected = 55;
+        int actual = deck.CardID;
+
+        Assert.Equal(expected, actual);
+    }
 
     //! REPO TESTS
 

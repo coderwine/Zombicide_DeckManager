@@ -55,6 +55,7 @@
         Queen_Severa,
         Chromatiz,
         Rat_King,
-        Swamp_Troll
+        Swamp_Troll,
+        Necromantic_Dragon
     }
 
